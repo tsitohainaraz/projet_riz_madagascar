@@ -1,0 +1,48 @@
+================================================================================
+🔬 RAPPORT D'ANALYSE - MODÈLES AVANCÉS (KNN, LinearSVR, SGD)
+================================================================================
+
+1. DONNÉES UTILISÉES
+   - Features    : 43 variables
+   - Train       : 3042 observations
+   - Test        : 761 observations
+   - Source      : Notebook 3 (Feature Engineering)
+   - Standardisation : ✅ Appliquée (StandardScaler)
+
+2. MODÈLES ENTRAÎNÉS (3 modèles)
+   ✅ SGD (Optuna)
+   ✅ LinearSVR (Optuna)
+   ✅ LinearSVR (Optuna)
+
+3. PERFORMANCES COMPARATIVES
+               Modèle  R2_Train  R2_Test  RMSE_Test  MAE_Test  Overfitting Overfitting_Status  CV_R2
+         SGD (Optuna)    0.1544   0.1060   857.9988  676.9909       0.0485                Non  0.137
+   LinearSVR (Optuna)    0.1561   0.1025   859.6322  678.5031       0.0536                Non  0.136
+   LinearSVR (Optuna)    0.1561   0.1025   859.6350  678.4727       0.0536                Non  0.136
+
+4. MEILLEUR MODÈLE : SGD (Optuna)
+   ==================================================
+   📊 R²   (Test) : 0.1060
+   📉 RMSE (Test) : 858.00 kg/ha
+   📏 MAE  (Test) : 676.99 kg/ha
+
+5. FICHIERS GÉNÉRÉS
+   📁 Modèles  : ../models/knn.pkl
+               : ../models/linearsvr.pkl
+               : ../models/sgd.pkl
+   📁 Résultats: ../results/06_advanced_models.csv
+   📁 Résumé   : ../results/06_resume_advanced_models.txt
+   📁 Figures  : ../figures/06_advanced_models_comparison.png
+               : ../figures/06_predictions_best_model.png
+
+6. AVANTAGES DES MODÈLES
+   ✅ KNN       : Simple, sans hypothèse, capture patterns locaux
+   ✅ LinearSVR : Rapide, scalable, robuste aux outliers
+   ✅ SGD       : Très rapide, adapté aux grands datasets
+
+7. INTERPRÉTATION
+   - Performance limitée (R² = 0.106)
+   - Erreur moyenne : 858 kg/ha
+   - ⚠️ Modéré modèle
+
+================================================================================

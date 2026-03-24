@@ -1,0 +1,20 @@
+\begin{table}
+\caption{Performances comparées des modèles de prédiction (test set)}
+\label{tab:performances}
+\begin{tabular}{lrrr}
+\toprule
+Modèle & R² (Test) & RMSE (kg/ha) & MAE (kg/ha) \\
+\midrule
+HistGradientBoosting & 0.181200 & 821.101900 & 642.107800 \\
+CatBoost (opt) & 0.175900 & 823.755400 & 644.764300 \\
+Gradient Boosting (opt) & 0.175200 & 824.083700 & 643.548600 \\
+Random Forest (opt) & 0.167400 & 827.971800 & 649.830800 \\
+LightGBM (opt) & 0.159500 & 831.886300 & 651.996000 \\
+AdaBoost & 0.135500 & 843.727500 & 661.904800 \\
+Decision Tree (opt) & 0.132800 & 845.003300 & 660.641700 \\
+SGD (Optuna) & 0.106000 & 857.998800 & 676.990900 \\
+Linear & 0.105500 & 858.210300 & NaN \\
+ElasticNet & 0.105400 & 858.244500 & NaN \\
+\bottomrule
+\end{tabular}
+\end{table}

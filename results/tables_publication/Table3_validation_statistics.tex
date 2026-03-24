@@ -1,0 +1,27 @@
+\begin{table}
+\caption{Validation statistique du meilleur modèle (Bootstrap, Permutation, Wilcoxon)}
+\label{tab:validation}
+\begin{tabular}{lllll}
+\toprule
+Test & Valeur & IC95 inf & IC95 sup & p-value \\
+\midrule
+Bootstrap R² (B=1000) & 0.180200 & 0.133700 & 0.224100 & — \\
+Bootstrap RMSE (B=1000) & 821.014800 & 778.148200 & 866.543200 & — \\
+Bootstrap MAE (B=1000) & 642.214300 & 605.889800 & 680.097100 & — \\
+Permutation (R²) & 0.165500 & — & — & 0.009900 \\
+Wilcoxon vs LinearSVR (Optuna) & — & — & — & 0.000000 \\
+Wilcoxon vs SGD (Optuna) & — & — & — & 0.000000 \\
+Wilcoxon vs Ridge & — & — & — & 0.000000 \\
+Wilcoxon vs ElasticNet & — & — & — & 0.000000 \\
+Wilcoxon vs Linear & — & — & — & 0.000000 \\
+Wilcoxon vs Lasso & — & — & — & 0.000000 \\
+Wilcoxon vs KNN (Optuna) & — & — & — & 0.000300 \\
+Wilcoxon vs AdaBoost & — & — & — & 0.000600 \\
+Wilcoxon vs LightGBM (opt) & — & — & — & 0.002500 \\
+Wilcoxon vs Random Forest (opt) & — & — & — & 0.011000 \\
+Wilcoxon vs Decision Tree (opt) & — & — & — & 0.011900 \\
+Wilcoxon vs CatBoost (opt) & — & — & — & 0.201500 \\
+Wilcoxon vs Gradient Boosting (opt) & — & — & — & 0.237700 \\
+\bottomrule
+\end{tabular}
+\end{table}

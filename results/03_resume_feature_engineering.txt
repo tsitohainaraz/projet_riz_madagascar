@@ -1,0 +1,49 @@
+
+FEATURE ENGINEERING - RÉSUMÉ
+================================================================================
+
+1. DONNÉES INITIALES
+   - Observations : 3803
+   - Variables originales : 20
+
+2. ENCODAGE DES VARIABLES CATÉGORIELLES
+   - Variables encodées : ['village', 'soil', 'tillage_system', 'CA_year', 'x24d', 'glypho']
+   - One-Hot Encoding sur : tillage_system, village, soil
+   - Encoding ordinal sur : CA_year
+
+3. NOUVELLES FEATURES CRÉÉES
+   ✅ Interactions système × pluviométrie et fertilisation
+   ✅ Ratios de fertilisation (N/urea, N/manure)
+   ✅ Indicateurs temporels (sow_day_of_year)
+   ✅ Jour de semis (sow_day_of_year)
+   ✅ Variables quadratiques (rain_cycle², nitrogen², area²)
+   ✅ Indice de stress hydrique (water_stress)
+   ✅ Efficacité d'utilisation de l'azote (efficiency_N)
+
+4. NOMBRE TOTAL DE FEATURES
+   - Features après engineering : 43
+   - Nouvelles features créées : 35
+   - Augmentation : 35 nouvelles features
+
+5. NORMALISATION
+   - Méthode : StandardScaler (mean=0, std=1)
+   - Features normalisées : 31
+
+6. DIVISION TRAIN/TEST
+   - Train : 3042 observations (80%)
+   - Test : 761 observations (20%)
+
+7. CORRÉLATIONS AVEC LE RENDEMENT
+   - Top feature : interaction_ca_rain_year (r = 0.1427)
+   - 2ème feature : rain_year (r = 0.1365)
+   - 3ème feature : CA_year_num (r = 0.1266)
+
+8. FICHIERS SAUVEGARDÉS
+   ✅ X_train.csv, X_test.csv, y_train.csv, y_test.csv
+   ✅ data_with_features.csv (non normalisées)
+   ✅ data_normalized.csv
+   ✅ features_list.txt
+   ✅ scaler.pkl
+   ✅ Graphiques de corrélation (09) et distribution (10)
+
+================================================================================

@@ -1,0 +1,3 @@
+Test,Statistic,p_value,Conclusion
+Shapiro (normalité résidus),0.9970756659954106,0.18661890298435724,Résidus normaux
+Levene (homoscédasticité),0.018132847720987385,0.8929177738546125,Homoscédastique

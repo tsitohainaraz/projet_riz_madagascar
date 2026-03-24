@@ -1,0 +1,72 @@
+
+ANALYSE DU MEILLEUR MODÈLE — RÉSUMÉ COMPLET
+================================================================================
+
+🏆 MODÈLE ANALYSÉ : HistGradientBoosting
+   Type : HistGradientBoostingRegressor
+
+================================================================================
+1. PERFORMANCES
+================================================================================
+   Métrique                    Train         Test
+   --------------------------------------------
+   R²                         0.2690       0.1812
+   RMSE (kg/ha)               776.57       821.10
+   MAE (kg/ha)                617.29       642.11
+   --------------------------------------------
+   Overfitting (ΔR²)          0.0878        ✅ Non
+
+================================================================================
+2. FEATURE IMPORTANCE — TOP 3
+================================================================================
+   Permutation Importance:
+   1. interaction_rain_area
+   2. village_Antsahamamy
+   3. rain_year
+
+   SHAP Importance:
+   1. interaction_rain_area
+   2. village_Antsahamamy
+   3. interaction_ca_rain_year
+
+================================================================================
+3. RÉSIDUS (Test)
+================================================================================
+   Moyenne      : 25.15 kg/ha
+   Médiane      : 0.26 kg/ha
+   Écart-type   : 821.26 kg/ha
+   Min / Max    : -2465.59 / 2752.62 kg/ha
+   Normalité    : ✅ Oui (Shapiro-Wilk p=0.1866)
+   Autocorr.    : ✅ Non (Durbin-Watson=2.0582)
+
+================================================================================
+4. GRAPHIQUES GÉNÉRÉS (../figures/)
+================================================================================
+   ✅ 08_predictions_vs_observations.png
+   ✅ 08_residuals_analysis.png
+   ✅ 08_shap_summary_dot.png
+   ✅ 08_shap_summary_bar.png
+   ✅ 08_shap_dependence_plots.png
+   ✅ 08_shap_force_best.png
+   ✅ 08_shap_force_worst.png
+
+================================================================================
+5. FICHIERS SAUVEGARDÉS (../results/)
+================================================================================
+   ✅ 07_all_models_combined.csv
+   ✅ 08_predictions.csv
+   ✅ 08_permutation_importance.csv
+   ✅ 08_shap_importance.csv
+   ✅ 08_worst_predictions.csv
+   ✅ 08_best_predictions.csv
+   ✅ 08_resume_best_model.txt
+
+================================================================================
+6. INTERPRÉTATION
+================================================================================
+   Performance  :     MODÉRÉE
+   → Le modèle explique 18.1% de la variance du rendement
+   → Erreur moyenne       : 642 kg/ha
+   → Erreur typique (RMSE): 821 kg/ha
+   → Surapprentissage     : ✅ Non détecté (ΔR²=0.0878)
+================================================================================

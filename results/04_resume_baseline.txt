@@ -1,0 +1,37 @@
+
+MODÈLES DE BASE (BASELINE) - RÉSUMÉ
+================================================================================
+
+1. DONNÉES
+   - Features utilisées : 43
+   - Observations Train : 3042
+   - Observations Test  : 761
+   - Ratio : 80% / 20%
+
+2. PERFORMANCES DES MODÈLES
+
+   ============================================================
+   Modèle         R² Test    RMSE Test    R² CV     Overfitting
+   ============================================================
+   Linear       0.1055     858.21      0.1349    0.0471
+   Ridge        0.1048     858.56      0.1352    0.0478
+   Lasso        0.1046     858.65      0.1349    0.0496
+   ElasticNet   0.1054     858.24      0.1368    0.0465
+
+3. MEILLEUR MODÈLE : Linear
+   - R² sur Test  : 0.1055
+   - RMSE sur Test : 858.21 kg/ha
+   - R² en CV      : 0.1349
+
+4. FICHIERS SAUVEGARDÉS
+   ✅ Modèles : ../models/*_regression.pkl
+   ✅ Scaler : ../models/scaler_baseline.pkl
+   ✅ Résultats : ../results/04_baseline_comparison.csv
+   ✅ Graphiques : ../figures/04_*.png
+
+5. INTERPRÉTATION
+   - Performance limitée (R² = 0.106)
+   - Erreur moyenne : 858 kg/ha
+   - Bon surapprentissage
+
+================================================================================

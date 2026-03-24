@@ -1,0 +1,26 @@
+RAPPORT DE VALIDATION — HISTGRADIENTBOOSTING
+======================================================================
+
+1. VALIDATION CROISÉE RÉPÉTÉE (K=5, n_repeats=10)
+   R² CV   : 0.1685 ± 0.0231
+   RMSE CV : 827.21 ± 18.93 kg/ha
+   MAE CV  : 658.04 ± 15.66 kg/ha
+   Overfitting : 0.1129 ⚠️
+
+2. BOOTSTRAPPING (B=1000)
+   R²   : 0.1802  IC95% [0.1337, 0.2241]
+   RMSE : 821.01 kg/ha  IC95% [778.15, 866.54]
+   MAE  : 642.21 kg/ha  IC95% [605.89, 680.10]
+
+3. TEST DE PERMUTATION
+   R² observé : 0.1655 | p=0.0099  ✅ Très significatif
+
+4. HÉTÉROSCÉDASTICITÉ
+   Shapiro p=0.1866 ✅ | Levene p=0.8929 ✅
+
+5. COMPARAISON (13 modèles) — Wilcoxon
+   Significativement meilleur : 11/13 (p<0.05)
+
+6. SENSIBILITÉ σ=0.2 → R²=0.1019 (perte=0.0793)
+
+======================================================================

@@ -1,0 +1,28 @@
+
+📋 RÉSUMÉ DU NETTOYAGE :
+
+1️⃣ CHARGEMENT :
+   ✅ 3803 observations chargées
+   ✅ 19 variables
+   ✅ Période : Y06_07 à Y09_10
+
+2️⃣ QUALITÉ DES DONNÉES :
+   ✅ Valeurs manquantes : 0 (0.00%)
+   ✅ Doublons : 0
+
+3️⃣ OUTLIERS :
+   📊 Outliers IQR : 17 (0.45%)
+   📊 Outliers Z-score : 2 (0.05%)
+   ✅ Décision : CONSERVER
+
+4️⃣ NORMALITÉ :
+   📊 Shapiro-Wilk p-value : 6.307699e-10
+   📊 Skewness : 0.1486
+   📊 Kurtosis : -0.3605
+
+5️⃣ DATASET FINAL :
+   ✅ 3803 observations
+   ✅ 20 variables
+   ✅ Sauvegardé dans : ../data/processed/data_clean.csv
+
+🎯 PROCHAINE ÉTAPE : Notebook 2 - Analyse Exploratoire (EDA)

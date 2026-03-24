@@ -1,0 +1,56 @@
+
+ANALYSE EXPLORATOIRE DES DONNÉES (EDA)
+================================================================================
+
+1. DONNÉES
+   - Nombre d'observations : 3,803
+   - Période : Y06_07 - Y09_10
+   - Systèmes de travail : till, ca
+   - Années en CA : Y0, Y1, Y2, Y3, Y4+
+   - Villages : 5 villages
+   - Types de sol : 2 types
+
+2. RENDEMENT (yield)
+   - Unité : kg/ha
+   - Moyenne : 2566.53 kg/ha
+   - Médiane : 2546.70 kg/ha
+   - Écart-type : 908.32 kg/ha
+   - Coefficient de variation : 35.39%
+   - Min : 318.00 kg/ha
+   - Max : 5350.00 kg/ha
+   - Q1 (25%) : 1915.60 kg/ha
+   - Q3 (75%) : 3142.90 kg/ha
+
+3. COMPARAISON DES SYSTÈMES
+   - till (conventionnel) : moyenne = 2467.17 kg/ha
+   - ca (conservation)   : moyenne = 2669.02 kg/ha
+   - Différence : 201.84 kg/ha
+
+4. GRAPHIQUES GÉNÉRÉS
+   ✅ 01_distribution_rendement.png - Distribution avec courbe normale
+   ✅ 02_boxplot_campagne.png - Boxplots par campagne agricole
+   ✅ 03_boxplot_tillage_system.png - Boxplots par système de travail
+   ✅ 04_boxplot_village.png - Boxplots par village
+   ✅ 05_boxplot_CA_year.png - Boxplots par année en CA
+   ✅ 06_correlation_heatmap.png - Heatmap des corrélations
+   ✅ 07_scatter_pluviometrie.png - Rendement vs pluviométrie
+   ✅ 08_scatter_fertilisation.png - Rendement vs fertilisation
+
+5. TESTS STATISTIQUES EFFECTUÉS
+   ✅ Test de normalité (Shapiro-Wilk)
+   ✅ Comparaison till vs ca (t-test ou Mann-Whitney)
+   ✅ Comparaison des campagnes agricoles (ANOVA ou Kruskal-Wallis)
+   ✅ Comparaison des villages (Kruskal-Wallis)
+   ✅ Effet des années en CA (Kruskal-Wallis)
+
+6. CORRÉLATIONS PRINCIPALES AVEC LE RENDEMENT
+   - rain_cycle : 0.051
+   - nitrogen : -0.030
+   - area : -0.156
+   - manure : -0.125
+   - urea : -0.037
+
+================================================================================
+📁 Tous les graphiques sont sauvegardés dans : ../figures/
+📁 Le résumé est sauvegardé dans : ../results/
+================================================================================

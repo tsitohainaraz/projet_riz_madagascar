@@ -1,0 +1,24 @@
+FIGURES HAUTE QUALITÉ POUR PUBLICATION
+======================================================================
+
+Répertoire : ../figures/publication/
+
+FIGURES GÉNÉRÉES :
+  1. Figure1_pipeline.png / .pdf
+  2. Figure2_model_comparison.png / .pdf
+  3. Figure3_feature_importance.png / .pdf
+  4. Figure4_predictions_analysis.png / .pdf
+
+SPÉCIFICATIONS TECHNIQUES :
+  - Résolution : 300 DPI
+  - Formats    : PNG (preview) + PDF (vectoriel)
+  - Palette    : Okabe & Ito (colorblind-safe)
+  - Police     : DejaVu Sans, ≥9pt
+  - Dimensions : optimisées pour colonnes double (18 cm)
+
+CONFORMITÉ :
+  ✅ Nature/Science : résolution ≥300 DPI
+  ✅ PLOS journals  : formats .eps, .pdf, .png acceptés
+  ✅ Accessibilité  : palette colorblind-friendly
+
+======================================================================

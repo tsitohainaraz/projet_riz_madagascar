@@ -1,0 +1,11 @@
+Modèle,R² (Test),RMSE (kg/ha),MAE (kg/ha)
+HistGradientBoosting,0.1812,821.1019,642.1078
+CatBoost (opt),0.1759,823.7554,644.7643
+Gradient Boosting (opt),0.1752,824.0837,643.5486
+Random Forest (opt),0.1674,827.9718,649.8308
+LightGBM (opt),0.1595,831.8863,651.996
+AdaBoost,0.1355,843.7275,661.9048
+Decision Tree (opt),0.1328,845.0033,660.6417
+SGD (Optuna),0.106,857.9988,676.9909
+Linear,0.1055,858.2103,
+ElasticNet,0.1054,858.2445,
